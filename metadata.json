@@ -1,0 +1,6 @@
+{
+  "name": "전통 바둑 (Go Master)",
+  "description": "9x9, 13x13, 19x19 사이즈를 지원하며 패(Ko)와 활로 규칙이 적용된 정통 바둑 웹 게임입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

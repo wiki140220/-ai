@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-board-wood: #DEB887;
+  --color-board-line: #3d2b1f;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #f3f4f6;
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* 나무 질감 오버레이를 위한 스타일 */
+.wood-texture {
+  background-color: var(--color-board-wood);
+  position: relative;
+  overflow: hidden;
+}
+
+.wood-texture::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  pointer-events: none;
+  background-image: 
+    repeating-linear-gradient(90deg, transparent 0, rgba(0,0,0,0.1) 1px, transparent 2px),
+    linear-gradient(to right, rgba(0,0,0,0.05), rgba(255,255,255,0.05));
+}
